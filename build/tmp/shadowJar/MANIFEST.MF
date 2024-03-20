@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Plugin-Class: com.morpheusdata.cataloglayout.CatalogItemStandardLayoutPl
+ ugin
+Plugin-Version: 0.1.0
+Morpheus-Name: Catalog Item Layout Plugin
+
