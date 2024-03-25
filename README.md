@@ -6,7 +6,7 @@ This plugin provides additional layout selections during catalog item creation a
 `./gradlew shadowJar`
 
 ### Configuration
-Once the plugin is uploaded to the Morpheus UI, a `Layouts` field should be visible when either creating or editing a catalog item. The field should open up a drop-down with the layout options.
+Once the plugin is uploaded to the Morpheus UI, a `Layout` field should be visible when either creating or editing a catalog item. The field should open up a drop-down with the layout options.
 
 #### Layouts
 The layout options are:
