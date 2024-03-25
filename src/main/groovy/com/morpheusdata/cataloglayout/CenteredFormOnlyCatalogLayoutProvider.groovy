@@ -14,14 +14,14 @@ import com.morpheusdata.views.ViewModel
 /**
  * Example TabProvider
  */
-class CenteredFormCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider {
+class CenteredFormOnlyCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider {
 	Plugin plugin
 	MorpheusContext morpheus
 
-	String code = 'catalog-item-centered-form'
-	String name = 'Centered Form Catalog Layout'
+	String code = 'catalog-item-centered-form-only'
+	String name = 'Centered Form Only'
 
-	CenteredFormCatalogLayoutProvider(Plugin plugin, MorpheusContext context) {
+	CenteredFormOnlyCatalogLayoutProvider(Plugin plugin, MorpheusContext context) {
 		this.plugin = plugin
 		this.morpheus = context
 	}
@@ -35,7 +35,7 @@ class CenteredFormCatalogLayoutProvider extends AbstractCatalogItemLayoutProvide
 	HTMLResponse renderTemplate(CatalogItemType catalogItemType, User user) {
 		ViewModel<CatalogItemType> model = new ViewModel<>()
 		model.object = catalogItemType
-		getRenderer().renderTemplate("hbs/centeredFormCatalogItem", model)
+		getRenderer().renderTemplate("hbs/centeredFormOnlyCatalogItem", model)
 	}
 
 	/**

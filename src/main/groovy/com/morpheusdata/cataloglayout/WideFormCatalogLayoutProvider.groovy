@@ -19,7 +19,7 @@ class WideFormCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider {
 	MorpheusContext morpheus
 
 	String code = 'catalog-item-wide-form'
-	String name = 'Wide Form Catalog Layout'
+	String name = 'Wide Form'
 
 	WideFormCatalogLayoutProvider(Plugin plugin, MorpheusContext context) {
 		this.plugin = plugin

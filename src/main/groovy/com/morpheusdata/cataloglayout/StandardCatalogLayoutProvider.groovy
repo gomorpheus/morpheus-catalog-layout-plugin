@@ -19,7 +19,7 @@ class StandardCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider {
 	MorpheusContext morpheus
 
 	String code = 'catalog-item-standard'
-	String name = 'Standard Catalog Layout'
+	String name = 'Standard'
 
 	StandardCatalogLayoutProvider(Plugin plugin, MorpheusContext context) {
 		this.plugin = plugin

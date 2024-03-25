@@ -20,13 +20,13 @@ class CatalogItemLayoutPlugin extends Plugin {
 	void initialize() {
 		StandardCatalogLayoutProvider standardCatalogLayoutProvider = new StandardCatalogLayoutProvider(this,morpheus)
 		StackedCatalogLayoutProvider stackedCatalogLayoutProvider = new StackedCatalogLayoutProvider(this,morpheus)
-		CenteredFormCatalogLayoutProvider centeredFormCatalogLayoutProvider = new CenteredFormCatalogLayoutProvider(this,morpheus)
+		CenteredFormOnlyCatalogLayoutProvider centeredFormOnlyCatalogLayoutProvider = new CenteredFormOnlyCatalogLayoutProvider(this,morpheus)
 		WideFormCatalogLayoutProvider wideFormCatalogLayoutProvider = new WideFormCatalogLayoutProvider(this,morpheus)
 		NarrowFormCatalogLayoutProvider narrowFormCatalogLayoutProvider = new NarrowFormCatalogLayoutProvider(this,morpheus)
 
 		this.pluginProviders.put(standardCatalogLayoutProvider.code, standardCatalogLayoutProvider)
 		this.pluginProviders.put(stackedCatalogLayoutProvider.code, stackedCatalogLayoutProvider)
-		this.pluginProviders.put(centeredFormCatalogLayoutProvider.code, centeredFormCatalogLayoutProvider)
+		this.pluginProviders.put(centeredFormOnlyCatalogLayoutProvider.code, centeredFormOnlyCatalogLayoutProvider)
 		this.pluginProviders.put(wideFormCatalogLayoutProvider.code, wideFormCatalogLayoutProvider)
 		this.pluginProviders.put(narrowFormCatalogLayoutProvider.code, narrowFormCatalogLayoutProvider)
 

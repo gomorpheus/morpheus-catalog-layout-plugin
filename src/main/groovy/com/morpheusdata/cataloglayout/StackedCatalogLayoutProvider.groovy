@@ -19,7 +19,7 @@ class StackedCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider {
 	MorpheusContext morpheus
 
 	String code = 'catalog-item-stacked'
-	String name = 'Stacked Catalog Layout'
+	String name = 'Stacked'
 
 	StackedCatalogLayoutProvider(Plugin plugin, MorpheusContext context) {
 		this.plugin = plugin

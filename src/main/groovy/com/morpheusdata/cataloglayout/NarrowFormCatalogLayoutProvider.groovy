@@ -19,7 +19,7 @@ class NarrowFormCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider 
 	MorpheusContext morpheus
 
 	String code = 'catalog-item-narrow-form'
-	String name = 'Narrow Form Catalog Layout'
+	String name = 'Narrow Form'
 
 	NarrowFormCatalogLayoutProvider(Plugin plugin, MorpheusContext context) {
 		this.plugin = plugin
