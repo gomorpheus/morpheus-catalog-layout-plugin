@@ -10,13 +10,13 @@
             <h1 class="ellipsize" title="{{name}}">{{name}}</h1>
             <div class="desc">{{description}}</div>
         </div>
-        <div class="catalog-item-body break-container-sm">
+        <div class="catalog-item-body break-container-sm stacked">
             {{#hasWiki}}
-                <div class="catalog-item-content wiki-content">
+                <div class="catalog-item-content wiki-content full-width">
                     {{wiki}}
                 </div>
             {{/hasWiki}}
-            <div class="catalog-item-configuration {{#hasWiki}}with-item-content{{/hasWiki}}">
+            <div class="catalog-item-configuration {{#hasWiki}}with-item-content{{/hasWiki}} form-centered">
                 {{#orderForm}}
                     <div class="actions text-right">
                         <button class="button" type="submit">Add to Order</button>

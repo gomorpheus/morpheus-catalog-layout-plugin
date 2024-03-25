@@ -8,6 +8,8 @@ buildscript {
 		classpath "com.github.johnrengelman:shadow:8.1.1"
 		classpath "com.morpheusdata:morpheus-plugin-gradle:$morpheusApiVersion"
 		classpath "com.bertramlabs.plugins:asset-pipeline-gradle:$assetPipelineVersion"
+		classpath "com.bertramlabs.plugins:handlebars-asset-pipeline:$assetPipelineVersion"
+		classpath "com.bertramlabs.plugins:sass-dart-asset-pipeline:$assetPipelineVersion"
 	}
 }
 
@@ -72,7 +74,7 @@ sourceSets {
 jar {
 	manifest {
 		attributes(
-				'Plugin-Class': 'com.morpheusdata.cataloglayout.CatalogItemStandardLayoutPlugin',
+				'Plugin-Class': 'com.morpheusdata.cataloglayout.CatalogItemLayoutPlugin',
 				'Plugin-Version': version,
 				'Morpheus-Name': 'Catalog Item Layout Plugin'
 		)
@@ -81,6 +83,19 @@ jar {
 
 assets {
 	packagePlugin = false //leave this false for plugins
+
+	configOptions = [
+			handlebars: [
+					templateRoot: 'templates',
+					templatePathSeperator: '/',
+					wrapTemplate: '''
+	  	 (function(){
+			var template = HandlebarsCustom.template, templates = HandlebarsCustom.templates = HandlebarsCustom.templates || {};
+				templates['$templateName'] = template($compiledTemplate);
+		}());
+	  	'''
+			]
+	]
 }
 
 
