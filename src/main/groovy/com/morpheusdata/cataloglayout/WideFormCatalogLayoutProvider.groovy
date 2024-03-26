@@ -37,18 +37,4 @@ class WideFormCatalogLayoutProvider extends AbstractCatalogItemLayoutProvider {
 		model.object = catalogItemType
 		getRenderer().renderTemplate("hbs/wideFormCatalogItem", model)
 	}
-
-	/**
-	 * Allows various sources used in the template to be loaded
-	 * @return
-	 */
-	@Override
-	ContentSecurityPolicy getContentSecurityPolicy() {
-		def csp = new ContentSecurityPolicy()
-		csp.scriptSrc = '*.jsdelivr.net'
-		csp.frameSrc = '*.digitalocean.com'
-		csp.imgSrc = '*.wikimedia.org'
-		csp.styleSrc = 'https: *.bootstrapcdn.com'
-		csp
-	}
 }

@@ -18,17 +18,15 @@ class CatalogItemLayoutPlugin extends Plugin {
 
 	@Override
 	void initialize() {
-		StandardCatalogLayoutProvider standardCatalogLayoutProvider = new StandardCatalogLayoutProvider(this,morpheus)
-		StackedCatalogLayoutProvider stackedCatalogLayoutProvider = new StackedCatalogLayoutProvider(this,morpheus)
 		CenteredFormOnlyCatalogLayoutProvider centeredFormOnlyCatalogLayoutProvider = new CenteredFormOnlyCatalogLayoutProvider(this,morpheus)
-		WideFormCatalogLayoutProvider wideFormCatalogLayoutProvider = new WideFormCatalogLayoutProvider(this,morpheus)
 		NarrowFormCatalogLayoutProvider narrowFormCatalogLayoutProvider = new NarrowFormCatalogLayoutProvider(this,morpheus)
+		StackedCatalogLayoutProvider stackedCatalogLayoutProvider = new StackedCatalogLayoutProvider(this,morpheus)
+		WideFormCatalogLayoutProvider wideFormCatalogLayoutProvider = new WideFormCatalogLayoutProvider(this,morpheus)
 
-		this.pluginProviders.put(standardCatalogLayoutProvider.code, standardCatalogLayoutProvider)
-		this.pluginProviders.put(stackedCatalogLayoutProvider.code, stackedCatalogLayoutProvider)
 		this.pluginProviders.put(centeredFormOnlyCatalogLayoutProvider.code, centeredFormOnlyCatalogLayoutProvider)
-		this.pluginProviders.put(wideFormCatalogLayoutProvider.code, wideFormCatalogLayoutProvider)
 		this.pluginProviders.put(narrowFormCatalogLayoutProvider.code, narrowFormCatalogLayoutProvider)
+		this.pluginProviders.put(stackedCatalogLayoutProvider.code, stackedCatalogLayoutProvider)
+		this.pluginProviders.put(wideFormCatalogLayoutProvider.code, wideFormCatalogLayoutProvider)
 
 		this.setName("Catalog Item Layouts")
 	}
