@@ -78,18 +78,18 @@ jar {
 assets {
 	packagePlugin = false //leave this false for plugins
 
-	configOptions = [
-			handlebars: [
-					templateRoot: 'templates',
-					templatePathSeperator: '/',
-					wrapTemplate: '''
-	  	 (function(){
-			var template = HandlebarsCustom.template, templates = HandlebarsCustom.templates = HandlebarsCustom.templates || {};
-				templates['$templateName'] = template($compiledTemplate);
-		}());
-	  	'''
-			]
-	]
+	// configOptions = [
+	// 		handlebars: [
+	// 				templateRoot: 'templates',
+	// 				templatePathSeperator: '/',
+	// 				wrapTemplate: '''
+	//   	 (function(){
+	// 		var template = HandlebarsCustom.template, templates = HandlebarsCustom.templates = HandlebarsCustom.templates || {};
+	// 			templates['$templateName'] = template($compiledTemplate);
+	// 	}());
+	//   	'''
+	// 		]
+	// ]
 }
 
 
