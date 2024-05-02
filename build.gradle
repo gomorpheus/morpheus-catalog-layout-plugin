@@ -71,9 +71,18 @@ sourceSets {
 jar {
 	manifest {
 		attributes(
-				'Plugin-Class': 'com.morpheusdata.cataloglayout.CatalogItemLayoutPlugin',
-				'Plugin-Version': version,
-				'Morpheus-Name': 'Catalog Item Layout Plugin'
+			'Plugin-Class': 'com.morpheusdata.cataloglayout.CatalogItemLayoutPlugin',
+			'Plugin-Version': version,
+			'Morpheus-Name': 'Catalog Item Layout Plugin',
+			'Morpheus-Organization': 'morpheus',
+			'Morpheus-Code': 'morpheus-catalog-item-layout-plugin',
+			'Morpheus-Description': 'Additional layout selections during catalog items.',
+			'Morpheus-Logo': 'assets/morpheus.svg',
+			'Morpheus-Logo-Dark': 'assets/morpheus.svg',
+			'Morpheus-Color': '#ffffff',
+			'Morpheus-Labels': 'Catalog',
+			'Morpheus-Repo': 'https://github.com/gomorpheus/morpheus-catalog-layout-plugin',
+			'Morpheus-Min-Appliance-Version': "6.3.0"
 		)
 	}
 }
