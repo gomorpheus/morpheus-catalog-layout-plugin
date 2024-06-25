@@ -11,3 +11,4 @@ bin/
 out/
 .assetcache
 .sdkmanrc
+lib/
