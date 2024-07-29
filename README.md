@@ -18,3 +18,9 @@ The layout options are:
 | Wide Form | The content and form are split side-by-side, in a 1:2 ratio. Intended for when the form labels are long and/or the content is short. |
 | Narrow Form | The content and form are split side-by-side, in a 2:1 ratio. Intended for when the content is long and/or the form labels are short. |
 
+
+<img src="/src/assets/images/catalog-layout-default.png" height="300" />
+<img src="/src/assets/images/catalog-layout-center.png" height="300" />
+<img src="/src/assets/images/catalog-layout-stacked.png" height="300" />
+<img src="/src/assets/images/catalog-layout-narrow.png" height="300" />
+<img src="/src/assets/images/catalog-layout-wide.png" height="300" />
